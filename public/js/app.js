@@ -3,7 +3,7 @@ var opcion2='<div class="contenido">{{name}}</div>';
 $(document).ready(function(){
 	var especies="";
 	var personaje="";
-	$.getJSON("http://swapi.co/api/species/",function(response){
+	$.getJSON("https://swapi.co/api/species/",function(response){
             $.each(response.results, function(i,specie){
             var id="";
             var id2;
@@ -17,7 +17,7 @@ $(document).ready(function(){
         	$("#contenido").html("");
             var id3= $(this).val().split("/"); //
             for (var i = 0; i < id3.length; i++) {
-                $.getJSON("http://swapi.co/api/people/" + id3[i] + "/", function(responce_2) {
+                $.getJSON("https://swapi.co/api/people/" + id3[i] + "/", function(responce_2) {
                         personaje=opcion2.replace("{{name}}", responce_2.name);
                         $("#contenido").append(personaje);
                     });
