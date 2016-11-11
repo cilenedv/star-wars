@@ -1,4 +1,4 @@
-var opcion='<option value="{{#}}">{{name}}</option>';
+var opcion='<option value="{{#}}" class="opcion">{{name}}</option>';
 var opcion2='<div class="contenido">{{name}}</div>';
 $(document).ready(function(){
 	var especies="";

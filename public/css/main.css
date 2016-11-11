@@ -1,3 +1,17 @@
+body{
+	background-color:url(../img/logo1.png);
+	background-position:center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 #especies{
 	display:block;
+	background-color: #ffc107;
+}
+#contenido{
+	color:white;
+}
+.opcion{
+	color:white;
 }
